@@ -12,10 +12,21 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="css/main.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/portfolio-item.css" rel="stylesheet">
-
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/maps/modules/map.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+	
+	<script src="js/ecl.js" type="text/javascript"></script>
+	<script src="js/bar.js" type="text/javascript"></script>
+	<script src="js/stacked.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -54,7 +65,65 @@
       <div class="row">
 
         <div class="col-md-8">
-          <img class="img-fluid" src="images/chart.jpeg" alt="">
+          <div id="ecl-container"></div>
+          <!-- <img class="img-fluid" src="images/chart.jpeg" alt=""> -->
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">Venue Locations</h3>
+          <p>The idea behind this chart is to find if groups are looking outside of our selected cities if so is there a Trend</p>
+          <h3 class="my-3">Charts Details</h3>
+          <ul>
+            <li>Cities</li>
+            <li>No. of Meetups</li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="row">
+
+        <div class="col-md-8">
+          <div id="xkcd" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+         <!-- <img class="img-fluid" src="images/group_pop.JPG" alt=""> -->
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">Venue Locations</h3>
+          <p>The idea behind this chart is to find if groups are looking outside of our selected cities if so is there a Trend</p>
+          <h3 class="my-3">Charts Details</h3>
+          <ul>
+            <li>Cities</li>
+            <li>No. of Meetups</li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="row">
+
+        <div class="col-md-8">
+          <div id="stacked-container"></div>
+          <!-- <img class="img-fluid" src="images/topic_pop.JPG" alt=""> -->
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">Venue Locations</h3>
+          <p>The idea behind this chart is to find if groups are looking outside of our selected cities if so is there a Trend</p>
+          <h3 class="my-3">Charts Details</h3>
+          <ul>
+            <li>Cities</li>
+            <li>No. of Meetups</li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="row">
+
+        <div class="col-md-8">
+          <div id="ecl-container"></div>
+          <img class="img-fluid" src="images/trends.JPG" alt="">
         </div>
 
         <div class="col-md-4">
