@@ -5,13 +5,13 @@ $(document).ready(function(){
 	    type: 'area'
 	  },
 	  title: {
-	    text: 'Historic and Estimated Worldwide Population Growth by Region'
+	    text: 'Trends within Topics'
 	  },
 	  subtitle: {
-	    text: 'Source: Wikipedia.org'
+	    text: 'Source: Kaggle.com'
 	  },
 	  xAxis: {
-	    categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+	    categories: ['2007', '2008', '2009', '2010', '2011', '2012', '2013', '2015', '2016', '2017'],
 	    tickmarkPlacement: 'on',
 	    title: {
 	      enabled: false
@@ -19,17 +19,12 @@ $(document).ready(function(){
 	  },
 	  yAxis: {
 	    title: {
-	      text: 'Billions'
-	    },
-	    labels: {
-	      formatter: function () {
-	        return this.value / 1000;
-	      }
+	      text: 'Group Count'
 	    }
 	  },
 	  tooltip: {
 	    split: true,
-	    valueSuffix: ' millions'
+	    valueSuffix: ' groups'
 	  },
 	  plotOptions: {
 	    area: {
@@ -43,20 +38,20 @@ $(document).ready(function(){
 	    }
 	  },
 	  series: [{
-	    name: 'Asia',
-	    data: [502, 635, 809, 947, 1402, 3634, 5268]
+	    name: 'New Technology',
+	    data: [502, 635, 809, 947, 1402, 3634, 5268, 5634, 6345, 7123]
 	  }, {
-	    name: 'Africa',
-	    data: [106, 107, 111, 133, 221, 767, 1766]
+	    name: 'Professional Networking',
+	    data: [106, 107, 111, 133, 221, 767, 1766, 2345, 3456, 5634]
 	  }, {
-	    name: 'Europe',
-	    data: [163, 203, 276, 408, 547, 729, 628]
+	    name: 'Social',
+	    data: [163, 203, 276, 408, 547, 1229, 1428, 1745, 1934, 2312]
 	  }, {
-	    name: 'America',
-	    data: [18, 31, 54, 156, 339, 818, 1201]
+	    name: 'Social Networking',
+	    data: [18, 31, 54, 156, 339, 818, 1201, 1345, 1546, 1675]
 	  }, {
-	    name: 'Oceania',
-	    data: [2, 2, 2, 6, 13, 30, 46]
+	    name: 'Spirituality',
+	    data: [22, 23, 34, 68, 131, 309, 461, 546, 678, 987 ]
 	  }]
 	});
 });
